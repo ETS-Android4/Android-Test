@@ -18,13 +18,13 @@ public class Mecanum_Drive {
 
     public void init()  {
         //Init Motors
-       FR = hwMap.get(DcMotor.class, "FR");
+       FR = LinearOpMode.get(DcMotor.class, "FR");
         FR.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-       FL = hwMap.get(DcMotor.class, "FL");
+       FL = LinearOpMode.get(DcMotor.class, "FL");
         FL.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-       BR = hwMap.get(DcMotor.class, "BR");
+       BR = LinearOpMode.get(DcMotor.class, "BR");
         BR.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-       BL = hwMap.get(DcMotor.class, "BL");
+       BL = LinearOpMode.get(DcMotor.class, "BL");
         BL.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
        //Reverse motor Direction
